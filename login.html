@@ -127,6 +127,14 @@
             <i class="bi bi-twitter"></i>
           </div>
         </form>
+        <script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Impede o envio real do formulário
+    // Aqui você poderia adicionar validação real de credenciais, se necessário.
+    window.location.href = "dashboard.html"; // Redireciona para o dashboard
+  });
+</script>
+
       </div>
     </div>
   </div>
