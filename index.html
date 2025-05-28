@@ -52,7 +52,7 @@
       <div class="classy-nav-container breakpoint-off">
         <div class="container">
           <!-- Menu -->
-          <nav class="classy-navbar justify-content-between" id="famieNav">
+          <nav class="classy-navbar" id="famieNav">
             <!-- Nav Brand -->
             <a href="index.html" class="nav-brand"><img src="img/core-img/ida.png" alt="" style="height: 80px;"></a>
             <!-- Navbar Toggler -->
@@ -69,7 +69,14 @@
               <div class="classynav">
                 <ul>
                  
-                  <li><a href="sobre.html">Sobre o IDA</a></li>
+                  <li><a href="#">Sobre o IDA</a>
+                   <ul class="dropdown">
+                      <li><a href="agricultura-familiar.html">Estatuto Ôrganico</a></li>
+                      <li><a href="extensao-rural.html">Organograma</a></li>
+                      <li><a href="sobre.html">Sobre o Ministerio</a></li>
+                      <li><a href="politicas-agrarias.html">Perfil do Titular</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Áreas de Atuação</a>
                     <ul class="dropdown">
                       <li><a href="agricultura-familiar.html">Agricultura Familiar</a></li>
@@ -92,15 +99,14 @@
                   </li>
                   <li><a href="contactos.html">Contactos</a></li>
                 </ul>
-                <!-- Search Icon -->
-                <div id="searchIcon">
-                  <i class="icon_search" aria-hidden="true"></i>
-                </div>
+            
                 
                 <!-- Login Icon -->
-  <div id="loginIcon" class="ms-3">
-    <a href="login.html" title="Login"><i class="fa fa-user-circle" style="font-size: 22px; color: #2d6a4f;"></i></a>
+  <div id="loginIcon" style="margin-left: 25em ; margin: auto;">
+     <button><a href="login.html" title="Login">Entrar</a></button>
+    <button><a href="login.html" title="Login">Pesquisar</a></button>
   </div>
+   
               </div>
               <!-- Navbar End -->
             </div>
