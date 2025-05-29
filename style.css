@@ -50,6 +50,70 @@ a:hover {
 
 
   /* provera adicionou */
+.classynav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Menu principal alinhado à esquerda */
+.main-menu-left {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+}
+
+/* Dropdown interno */
+.main-menu-left li {
+  position: relative;
+}
+
+.main-menu-left li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 1em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  list-style: none;
+  min-width: 180px;
+}
+
+.main-menu-left li:hover > ul.dropdown {
+  display: block;
+}
+
+/* .main-menu-left li ul.dropdown li {
+  padding: 0.5em 1em;
+}
+ */
+.main-menu-left li ul.dropdown li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Alinhamento dos botões à direita */
+.main-menu-right button {
+  margin-left: 1px;
+  background-color: #77b122; /* Exemplo verde escuro */
+  border: none;
+  color: white;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.main-menu-right button a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-menu-right button:hover {
+  background-color: #0a8b0a;
+}
 
  .single-benefits-area img {
   height: 100px;
