@@ -365,8 +365,8 @@ input:focus {
   height: 60px;
   background-color: #ffffff;
   border-radius: 100%;
-  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-  animation: sk-scaleout 1s infinite ease-in-out; }
+  -webkit-animation: sk-scaleout 0.5s infinite ease-in-out;
+  animation: sk-scaleout 0.5s infinite ease-in-out; }
 
 @-webkit-keyframes sk-scaleout {
   0% {
