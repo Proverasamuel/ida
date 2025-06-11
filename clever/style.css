@@ -162,7 +162,7 @@ img {
   #preloader .spinner {
     width: 40px;
     height: 40px;
-    background-color: #3762f0;
+    background-color: #85ff6d;
     margin: auto;
     -webkit-animation: sk-rotateplane 0.5s infinite ease-in-out;
     animation: sk-rotateplane 0.5s infinite ease-in-out; }
@@ -325,7 +325,7 @@ textarea:focus {
   display: inline-block;
   min-width: 160px;
   height: 40px;
-  background-color: #3762f0;
+  background-color: #37f07e;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -342,7 +342,7 @@ textarea:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background-color: #2c56df; }
+    background-color: #64da91; }
   .clever-btn.btn-2 {
     background-color: transparent;
     border: 1px solid #ebebeb;
@@ -508,12 +508,12 @@ textarea:focus {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
-    color: #3762f0;
+    color: #66cc9b;
     line-height: 40px; }
     .register-login-area a.active, .register-login-area a:hover, .register-login-area a:focus {
-      background-color: #d7e0fc;
+      background-color: #56ff95;
       font-weight: 600;
-      color: #3762f0; }
+      color: #30b27f; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .register-login-area a {
         padding: 0 15px; } }
@@ -581,7 +581,7 @@ textarea:focus {
   .single-cool-facts-area h2 {
     font-size: 36px;
     margin-bottom: 5px;
-    color: #3762f0; }
+    color: #79e459; }
   .single-cool-facts-area h5 {
     margin-bottom: 0;
     font-size: 18px;
@@ -643,7 +643,7 @@ textarea:focus {
         color: rgba(0, 0, 0, 0.3); }
     .single-popular-course .seat-rating-fee .course-fee a {
       display: inline-block;
-      width: 70px;
+      width: 90px;
       height: 40px;
       border-radius: 0 0 6px 0;
       background-color: #e3d21b;
@@ -655,7 +655,7 @@ textarea:focus {
       color: #ffffff;
       letter-spacing: 0.75px; }
       .single-popular-course .seat-rating-fee .course-fee a.free {
-        background-color: #3762f0; }
+        background-color: #73f06f; }
 
 .single-course-intro {
   position: relative;
@@ -1271,7 +1271,7 @@ textarea:focus {
       padding: 0 30px; }
     .single-upcoming-events .date-fee .events-fee a {
       display: inline-block;
-      width: 70px;
+      width: 90px;
       height: 40px;
       border-radius: 0 0 6px 0;
       background-color: #e3d21b;
@@ -1283,7 +1283,7 @@ textarea:focus {
       color: #ffffff;
       letter-spacing: 0.75px; }
       .single-upcoming-events .date-fee .events-fee a.free {
-        background-color: #3762f0; }
+        background-color: #7ef573; }
 
 /* :: 9.0 Register Now */
 .register-now {
@@ -1297,7 +1297,7 @@ textarea:focus {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
   .register-now::after {
-    background-color: rgba(214, 223, 251, 0.7);
+    background-color: rgba(231, 231, 231, 0.7);
     top: 0;
     left: 0;
     position: absolute;
@@ -1369,10 +1369,10 @@ textarea:focus {
       margin-right: 12px;
       font-size: 36px;
       font-weight: 700;
-      color: #3762f0; }
+      color: #79d86d; }
       .register-now .register-now-countdown .events-cd div span {
         margin-top: 0;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(0, 0, 0, 0.7);
         font-size: 18px;
         font-weight: 700;
         display: block; }
@@ -1474,7 +1474,7 @@ textarea:focus {
   transition-duration: 500ms; }
   .tutors-slide .owl-prev:hover,
   .tutors-slide .owl-next:hover {
-    background-color: #2c56df;
+    background-color: #2cdf59;
     color: #ffffff; }
 .tutors-slide .owl-next {
   left: auto;
@@ -1484,6 +1484,31 @@ textarea:focus {
 .blog-page {
   padding-left: 7%;
   padding-right: 7%; }
+/* pro */
+
+.events-thumb img {
+    width: 100%;
+    height: 200px; /* ajuste conforme o layout */
+    object-fit: cover;
+    border-radius: 5px; /* opcional, para cantos arredondados */
+}
+/* Faz com que todas as colunas tenham a mesma altura */
+.row > div {
+  display: flex;
+}
+
+/* Garante que o card preencha todo o espaço disponível da coluna */
+.single-popular-course {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.single-popular-course img {
+  width: 100%;
+  height: 200px; /* ou outro valor fixo que caiba no design */
+  object-fit: cover;
+  border-radius: 5px; /* opcional */
+}
 
 .single-blog-area {
   position: relative;
@@ -1504,7 +1529,7 @@ textarea:focus {
         -webkit-transition-duration: 500ms;
         transition-duration: 500ms; }
         .single-blog-area .blog-content .blog-headline h4:hover, .single-blog-area .blog-content .blog-headline h4:focus {
-          color: #2c56df; }
+          color: #33cc40; }
     .single-blog-area .blog-content .meta {
       margin-bottom: 15px; }
       .single-blog-area .blog-content .meta span {

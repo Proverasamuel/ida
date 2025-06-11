@@ -994,7 +994,9 @@ input:focus {
   .single-product-area:focus .product-meta-data, .single-product-area:hover .product-meta-data {
     opacity: 1;
     visibility: visible; }
-
+.justificado {
+  text-align: justify;
+}
 .single-farming-practice-area {
   position: relative;
   z-index: 1;

@@ -60,12 +60,12 @@
     }
 
     // :: 6.0 ScrollUp Active Code
-    if ($.fn.scrollUp) {
+  /*   if ($.fn.scrollUp) {
         browserWindow.scrollUp({
             scrollSpeed: 1500,
             scrollText: '<i class="fa fa-angle-up"></i>'
         });
-    }
+    } */
 
     // :: 7.0 CouterUp Active Code
     if ($.fn.counterUp) {
@@ -76,11 +76,11 @@
     }
 
     // :: 8.0 Sticky Active Code
-    if ($.fn.sticky) {
+   /*  if ($.fn.sticky) {
         $(".clever-main-menu").sticky({
             topSpacing: 0
         });
-    }
+    } */
 
     // :: 9.0 wow Active Code
     if (browserWindow.width() > 767) {
@@ -88,8 +88,8 @@
     }
 
     // :: 10.0 prevent default a click
-    $('a[href="#"]').click(function ($) {
+   /*  $('a[href="#"]').click(function ($) {
         $.preventDefault()
-    });
+    }); */
 
 })(jQuery);
