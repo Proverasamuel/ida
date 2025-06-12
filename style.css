@@ -695,50 +695,91 @@ input:focus {
 @media only screen and (max-width: 767px) {
   .classynav > ul {
     padding-bottom: 20px; } }
-
 .hero-area {
   position: relative;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .single-welcome-slides {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  z-index: 1;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .single-welcome-slides {
-      height: 550px; } }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .single-welcome-slides {
-      height: 600px; } }
-  @media only screen and (max-width: 767px) {
-    .single-welcome-slides {
-      height: 600px; } }
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .single-welcome-slides {
-      height: 450px; } }
-  .single-welcome-slides .welcome-content {
-    position: relative;
-    z-index: 1; }
-    .single-welcome-slides .welcome-content h2 {
-      font-size: 50px;
-      text-transform: capitalize;
-      color: #ffffff; }
-      @media only screen and (min-width: 768px) and (max-width: 991px) {
-        .single-welcome-slides .welcome-content h2 {
-          font-size: 42px; } }
-      @media only screen and (max-width: 767px) {
-        .single-welcome-slides .welcome-content h2 {
-          font-size: 30px; } }
-    .single-welcome-slides .welcome-content p {
-      color: #ffffff; }
 
+.bg-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* melhor contraste para o texto */
+  z-index: -1;
+}
+
+.welcome-content {
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  margin: auto;
+}
+
+.welcome-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.welcome-content p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: #f2f2f2;
+}
+
+.famie-btn {
+  background-color: #4CAF50;
+  color: white;
+  /* padding: 12px 30px; */
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.famie-btn:hover {
+  background-color: #3d9140;
+}
+
+@media (max-width: 991px) {
+  .single-welcome-slides {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .welcome-content h2 {
+    font-size: 2rem;
+  }
+
+  .welcome-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .welcome-content p {
+    font-size: 0.95rem;
+  }
+}
 .breadcrumb-area {
   position: relative;
   z-index: 1;
